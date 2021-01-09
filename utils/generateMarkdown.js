@@ -45,7 +45,7 @@ ${data.projectDescription}
 
 ## Installation
 \`\`\`
-${data.projectInstall}
+${data.projectInstall.trim()}
 \`\`\`
 
 ## Usage

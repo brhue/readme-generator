@@ -14,7 +14,7 @@ const questions = [
     name: 'projectDescription',
   },
   {
-    type: 'input',
+    type: 'editor',
     message: 'Please provide installation instructions.',
     name: 'projectInstall',
   },
