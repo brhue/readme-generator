@@ -66,8 +66,12 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 async function init() {
+  if (process.argv.length < 3) {
+    console.log('Usage: node index.js <filename>');
+    process.exit();
+  }
   const response = await inquirer.prompt(questions);
-  writeToFile('example-README.md', generateMarkdown(response));
+  writeToFile(process.argv[2], generateMarkdown(response));
 }
 
 // Function call to initialize app
